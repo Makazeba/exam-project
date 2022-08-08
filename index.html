@@ -53,59 +53,103 @@
             </button>
           </div>
         </div>
-        <div class="baner-wrapper">
-          <h1 class="header-title">
-            ice cream made with <span class="header-title__pink">passion</span>
-          </h1>
-          <div class="buttons-blok">
-            <button type="button" class="buttons-blok__products button">
-              <a href="" class="buttons-blok__link button-products link"
-                >Products</a
-              >
-            </button>
-            <button type="button" class="buttons-blok__made button">
-              <a href="" class="buttons-blok__link button-made link"
-                >How it’s made?</a
-              >
-            </button>
+        <div class="col-header-wrapper">
+          <div class="left-col">
+            <div class="baner-wrapper">
+              <h1 class="header-title">
+                ice cream made with
+                <span class="header-title__pink">passion</span>
+              </h1>
+              <div class="buttons-blok">
+                <button type="button" class="buttons-blok__products button">
+                  <a href="" class="buttons-blok__link button-products link"
+                    >Products</a
+                  >
+                </button>
+                <button type="button" class="buttons-blok__made button">
+                  <a href="" class="buttons-blok__link button-made link"
+                    >How it’s made?</a
+                  >
+                </button>
+              </div>
+            </div>
+            <div class="left-col-wrap">
+              <div class="banner-img-milk">
+                <picture
+                  ><source
+                    srcset="
+                      ./images/header/milk-desk.png    1x,
+                      ./images/header/milk-desk-2x.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                    srcset="
+                      ./images/header/milk.png    1x,
+                      ./images/header/milk-2x.png 2x
+                    "
+                    media="(min-width: 768px)" />
+                  <img src="./images/header/milk.png" alt="milk"
+                /></picture>
+              </div>
+              <div class="hero-wrapper">
+                <p class="hero-wrapper__text">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                  do eiusmod tempor incididunt ut labore et
+                </p>
+                <button type="button" class="hero-cursor-btn button">
+                  <a href="" class="hero-cursor-btn__link link">
+                    <img
+                      src="./images/products/cursor-btn.png"
+                      alt="arrow-right"
+                      width="18"
+                      height="18"
+                      class="hero-cursor-btn__img"
+                    />
+                  </a>
+                </button>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="number-wrapper">
-          <ul class="number-wrapper__list list">
-            <li class="number-wrapper__item number-wrapper__item-16">
-              <span class="number-wrapper__numb number-wrapper__numb-16"
-                >16</span
-              >
-              <span class="number-wrapper__text number-wrapper__text-16"
-                >cafes</span
-              >
-            </li>
-            <li class="number-wrapper__item number-wrapper__item-23">
-              <span class="number-wrapper__numb number-wrapper__numb-23"
-                >23</span
-              >
-              <span class="number-wrapper__text number-wrapper__text-23"
-                >food trucks</span
-              >
-            </li>
-          </ul>
-        </div>
-        <div class="hero-wrapper">
-          <p class="hero-wrapper__text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et
-          </p>
-          <button type="button" class="hero-cursor-btn button">
-            <a href="" class="hero-cursor-btn__link">
-              <img
-                src="./images/products/cursor-btn.png"
-                alt="arrow-right"
-                width="40"
-                height="40"
-                class="hero-cursor-btn__img"
-              />
-            </a>
-          </button>
+          <div class="right-col">
+            <div class="number-wrapper">
+              <ul class="number-wrapper__list list">
+                <li class="number-wrapper__item number-wrapper__item-16">
+                  <span class="number-wrapper__numb number-wrapper__numb-16"
+                    >16</span
+                  >
+                  <span class="number-wrapper__text number-wrapper__text-16"
+                    >cafes</span
+                  >
+                </li>
+                <li class="number-wrapper__item number-wrapper__item-23">
+                  <span class="number-wrapper__numb number-wrapper__numb-23"
+                    >23</span
+                  >
+                  <span class="number-wrapper__text number-wrapper__text-23"
+                    >food trucks</span
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="banner-img-girl">
+              <picture>
+                <source
+                  srcset="
+                    ./images/header/girl-desk.png    1x,
+                    ./images/header/girl-desk-2x.png 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./images/header/girl-tab.png    1x,
+                    ./images/header/girl-tab-2x.png 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <img src="./images/header/girl-tab.png" alt="girl" />
+              </picture>
+            </div>
+          </div>
         </div>
         <div class="banner-img-ice">
           <picture>
@@ -157,41 +201,6 @@
               media="(min-width: 320px)"
             />
             <img src="./images/header/header-ellipse.png" alt="ellipse" />
-          </picture>
-        </div>
-        <div class="banner-img-milk">
-          <picture
-            ><source
-              srcset="
-                ./images/header/milk-desk.png    1x,
-                ./images/header/milk-desk-2x.png 2x
-              "
-              media="(min-width: 1200px)"
-              srcset="
-                ./images/header/milk.png    1x,
-                ./images/header/milk-2x.png 2x
-              "
-              media="(min-width: 768px)" />
-            <img src="./images/header/milk.png" alt="milk"
-          /></picture>
-        </div>
-        <div class="banner-img-girl">
-          <picture>
-            <source
-              srcset="
-                ./images/header/girl-desk.png    1x,
-                ./images/header/girl-desk-2x.png 2x
-              "
-              media="(min-width: 1200px)"
-            />
-            <source
-              srcset="
-                ./images/header/girl-tab.png    1x,
-                ./images/header/girl-tab-2x.png 2x
-              "
-              media="(min-width: 768px)"
-            />
-            <img src="./images/header/girl-tab.png" alt="girl" />
           </picture>
         </div>
       </div>
