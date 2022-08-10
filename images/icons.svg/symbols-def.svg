@@ -12,6 +12,11 @@
 <path fill="#fea5bb" style="fill: var(--color1, #fea5bb)" d="M16.471 32c8.837 0 16-7.163 16-16s-7.163-16-16-16c-8.837 0-16 7.163-16 16s7.163 16 16 16z"></path>
 <path fill="#fff" style="fill: var(--color2, #fff)" d="M20.916 15.981h-2.61v9.618h-3.955v-9.618h-1.881v-3.38h1.881v-2.188c0-1.564 0.739-4.014 3.99-4.014l2.929 0.012v3.281h-2.125c-0.349 0-0.839 0.175-0.839 0.921v1.989h2.955l-0.346 3.377z"></path>
 </symbol>
+<symbol id="icon-dots" viewBox="0 0 139 32">
+<path  style="fill: var(--color1, #fff)" d="M85.333 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path  style="fill: var(--color1, #fff)" d="M32 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+<path  style="fill: var(--color1, #fff)" d="M138.667 16c0 8.837-7.163 16-16 16s-16-7.163-16-16c0-8.837 7.163-16 16-16s16 7.163 16 16z"></path>
+</symbol>
 <symbol id="icon-arrow-btn" viewBox="0 0 26 32">
 <path fill="none" stroke="#d41443" stroke-width="6.4" stroke-miterlimit="4" stroke-linecap="round" stroke-linejoin="round" style="stroke: var(--color1, #d41443)" d="M3.542 3.2l16.825 12.8-16.825 12.8"></path>
 </symbol>

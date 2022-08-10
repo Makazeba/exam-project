@@ -37,6 +37,27 @@
               />
             </a>
           </div>
+          <div class="desk-menu-content">
+            <ul class="desk-menu-content__list list">
+              <li class="desk-menu-content__item">
+                <a href="" class="desk-menu-content__link link">Home</a>
+              </li>
+              <li class="desk-menu-content__item">
+                <a href="" class="desk-menu-content__link link">About us</a>
+              </li>
+              <li class="desk-menu-content__item">
+                <a href="" class="desk-menu-content__link link"
+                  >How it’s made?</a
+                >
+              </li>
+              <li class="desk-menu-content__item">
+                <a href="" class="desk-menu-content__link link">Our products</a>
+              </li>
+              <li class="desk-menu-content__item">
+                <a href="" class="desk-menu-content__link link">Contact</a>
+              </li>
+            </ul>
+          </div>
           <div class="header-menu-btn">
             <button type="button" class="mob-menu__btn button">
               <svg class="mob-menu__btn-burger" width="20px" height="15px">
@@ -251,14 +272,20 @@
             <h3 class="product-content__top-title">100% natural</h3>
             <h2 class="product-content__bottom-title">products</h2>
             <ul class="products-list list">
-              <li class="products-list__item">
+              <li class="products-list__item cream">
                 <div class="products-list__wrapper">
                   <h2 class="products-list__title">ice cream</h2>
+                  <svg class="products-list__icon" width="26px" height="6px">
+                    <use
+                      href="./images/icons.svg/symbols-def.svg#icon-dots"
+                    ></use>
+                  </svg>
                   <p class="products-list__after-title">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et. dolore magna
                     aliqua facilisis.
                   </p>
+
                   <button type="button" class="cursor-btn button">
                     <a href="" class="cursor-btn__link">
                       <img
@@ -271,15 +298,48 @@
                     </a>
                   </button>
                 </div>
+                <picture class="products-img"
+                  ><source
+                    srcset="
+                      ./images/products/products-pic1.png    1x,
+                      ./images/products/products-pic1-2x.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/products/products-pic1-tab.png    1x,
+                      ./images/products/products-pic1-tab-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/products/products-pic1-desk.png    1x,
+                      ./images/products/products-pic1-desk-2x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/products/products-pic1.png"
+                    alt="ice cream"
+                  />
+                </picture>
               </li>
-              <li class="products-list__item">
+              <li class="products-list__item coffee">
                 <div class="products-list__wrapper">
                   <h2 class="products-list__title">ice coffee</h2>
+                  <svg class="products-list__icon" width="26px" height="6px">
+                    <use
+                      href="./images/icons.svg/symbols-def.svg#icon-dots"
+                    ></use>
+                  </svg>
                   <p class="products-list__after-title">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et. dolore magna
                     aliqua facilisis.
                   </p>
+
                   <button type="button" class="cursor-btn button">
                     <a href="" class="cursor-btn__link">
                       <img
@@ -292,15 +352,45 @@
                     </a>
                   </button>
                 </div>
+                <picture class="products-img">
+                  <source
+                    srcset="
+                      ./images/products/products-pic2.png    1x,
+                      ./images/products/products-pic2-2x.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/products/products-pic2-tab.png    1x,
+                      ./images/products/products-pic2-tab-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/products/products-pic2-desk.png    1x,
+                      ./images/products/products-pic2-desk-2x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./images/products/products-pic2.png" alt="coffee" />
+                </picture>
               </li>
-              <li class="products-list__item">
+              <li class="products-list__item milkshakes">
                 <div class="products-list__wrapper">
                   <h2 class="products-list__title">milkshakes</h2>
+                  <svg class="products-list__icon" width="26px" height="6px">
+                    <use
+                      href="./images/icons.svg/symbols-def.svg#icon-dots"
+                    ></use>
+                  </svg>
                   <p class="products-list__after-title">
                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                     do eiusmod tempor incididunt ut labore et. dolore magna
                     aliqua facilisis.
                   </p>
+
                   <button type="button" class="cursor-btn button">
                     <a href="" class="cursor-btn__link">
                       <img
@@ -313,6 +403,33 @@
                     </a>
                   </button>
                 </div>
+                <picture class="products-img">
+                  <source
+                    srcset="
+                      ./images/products/products-pic3.png    1x,
+                      ./images/products/products-pic3-2x.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/products/products-pic3-tab.png    1x,
+                      ./images/products/products-pic3-tab-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/products/products-pic3-desk.png    1x,
+                      ./images/products/products-pic3-desk-2x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img
+                    src="./images/products/products-pic3.png"
+                    alt="milkshakes"
+                  />
+                </picture>
               </li>
             </ul>
           </div>
@@ -327,10 +444,10 @@
             <div class="about-content__img">
               <img
                 srcset="
-                  ./images/products/about-img.png    1x,
-                  ./images/products/about-img-2x.png 2x
+                  ./images/about/about-img.png    1x,
+                  ./images/about/about-img-2x.png 2x
                 "
-                src="./images/products/about-img.png"
+                src="./images/about/about-img.png"
                 alt="cow and milk"
                 width="280px"
                 height="279px"
@@ -362,10 +479,10 @@
               <li class="advantages-content__item">
                 <img
                   srcset="
-                    ./images/products/icon1.png    1x,
-                    ./images/products/icon1-2x.png 2x
+                    ./images/advantages/icon1.png    1x,
+                    ./images/advantages/icon1-2x.png 2x
                   "
-                  src="./images/products/icon1.png"
+                  src="./images/advantages/icon1.png"
                   alt="ведро с молоком вымя"
                   width="33px"
                   height="50px"
@@ -378,10 +495,10 @@
               <li class="advantages-content__item">
                 <img
                   srcset="
-                    ./images/products/icon2.png    1x,
-                    ./images/products/icon2-2x.png 2x
+                    ./images/advantages/icon2.png    1x,
+                    ./images/advantages/icon2-2x.png 2x
                   "
-                  src="./images/products/icon2.png"
+                  src="./images/advantages/icon2.png"
                   alt="ведро с яблоками"
                   width="50px"
                   height="50px"
@@ -394,10 +511,10 @@
               <li class="advantages-content__item">
                 <img
                   srcset="
-                    ./images/products/icon3.png    1x,
-                    ./images/products/icon3-2x.png 2x
+                    ./images/advantages/icon3.png    1x,
+                    ./images/advantages/icon3-2x.png 2x
                   "
-                  src="./images/products/icon3.png"
+                  src="./images/advantages/icon3.png"
                   alt="сердечко на палочке"
                   width="44px"
                   height="50px"
@@ -417,7 +534,7 @@
           <div class="gallery-content">
             <div class="gallery-content__one-blok">
               <img
-                src="./images/products/gallery1.jpg"
+                src="./images/gallery/gallery1.jpg"
                 alt="icecream"
                 width="150px"
                 height="150px"
@@ -425,13 +542,13 @@
             </div>
             <div class="gallery-content__two-blok">
               <img
-                src="./images/products/gallery2.jpg"
+                src="./images/gallery/gallery2.jpg"
                 alt="icecream"
                 width="150px"
                 height="150px"
               />
               <img
-                src="./images/products/gallery3.jpg"
+                src="./images/gallery/gallery3.jpg"
                 alt="icecream"
                 width="150px"
                 height="150px"
@@ -439,13 +556,13 @@
             </div>
             <div class="gallery-content__three-blok">
               <img
-                src="./images/products/gallery4.jpg"
+                src="./images/gallery/gallery4.jpg"
                 alt="icecream"
                 width="150px"
                 height="150px"
               />
               <img
-                src="./images/products/gallery5.jpg"
+                src="./images/gallery/gallery5.jpg"
                 alt="icecream"
                 width="150px"
                 height="150px"
@@ -453,13 +570,13 @@
             </div>
             <div class="gallery-content__four-blok">
               <img
-                src="./images/products/gallery6.jpg"
+                src="./images/gallery/gallery6.jpg"
                 alt="icecream"
                 width="150px"
                 height="150px"
               />
               <img
-                src="./images/products/gallery7.jpg"
+                src="./images/gallery/gallery7.jpg"
                 alt="icecream"
                 width="150px"
                 height="150px"
@@ -467,13 +584,13 @@
             </div>
             <div class="gallery-content__five-blok">
               <img
-                src="./images/products/gallery8.jpg"
+                src="./images/gallery/gallery8.jpg"
                 alt="icecream"
                 width="150px"
                 height="150px"
               />
               <img
-                src="./images/products/gallery9.jpg"
+                src="./images/gallery/gallery9.jpg"
                 alt="icecream"
                 width="150px"
                 height="150px"
@@ -481,7 +598,7 @@
             </div>
             <div class="gallery-content__six-blok">
               <img
-                src="./images/products/gallery10.jpg"
+                src="./images/gallery/gallery10.jpg"
                 alt="icecream"
                 width="150px"
                 height="150px"
@@ -498,10 +615,10 @@
               <li class="customer-reviews__item">
                 <img
                   srcset="
-                    ./images/products/photo1.png    1x,
-                    ./images/products/photo1-2x.png 2x
+                    ./images/reviews/photo1.png    1x,
+                    ./images/reviews/photo1-2x.png 2x
                   "
-                  src="./images/products/photo1.png"
+                  src="./images/reviews/photo1.png"
                   alt="Emily"
                   width="85px"
                   height="85px"
@@ -520,10 +637,10 @@
               <li class="customer-reviews__item">
                 <img
                   srcset="
-                    ./images/products/photo2.png    1x,
-                    ./images/products/photo2-2x.png 2x
+                    ./images/reviews/photo2.png    1x,
+                    ./images/reviews/photo2-2x.png 2x
                   "
-                  src="./images/products/photo2.png"
+                  src="./images/reviews/photo2.png"
                   alt="July"
                   width="85px"
                   height="85px"
@@ -542,10 +659,10 @@
               <li class="customer-reviews__item">
                 <img
                   srcset="
-                    ./images/products/photo3.png    1x,
-                    ./images/products/photo3-2x.png 2x
+                    ./images/reviews/photo3.png    1x,
+                    ./images/reviews/photo3-2x.png 2x
                   "
-                  src="./images/products/photo3.png"
+                  src="./images/reviews/photo3.png"
                   alt="Katy"
                   width="85px"
                   height="85px"

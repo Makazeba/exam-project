@@ -5,6 +5,9 @@
   @include tablet {
     min-height: 416px;
   }
+  @include desktop {
+    min-height: 664px;
+  }
 }
 
 .logo {
@@ -19,11 +22,48 @@
   @include tablet {
     padding-top: 32px;
   }
+  @include desktop {
+    padding-top: 37px;
+    justify-content: space-between;
+  }
+}
+
+.desk-menu-content {
+  display: none;
+  @include desktop {
+    display: block;
+    position: relative;
+    z-index: 5;
+  }
+}
+
+.desk-menu-content__list {
+  display: flex;
+}
+
+.desk-menu-content__item + .desk-menu-content__item {
+  margin-left: 35px;
+}
+
+.desk-menu-content__link {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.31;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  &:hover,
+  &:focus {
+    color: #d41443;
+  }
 }
 
 .header-menu-btn {
   margin: 0 auto;
   margin-right: 0;
+  @include desktop {
+    margin: 0;
+  }
 }
 
 .mob-menu__btn {
@@ -31,6 +71,9 @@
   z-index: 5;
   padding: 0;
   background-color: transparent;
+  @include desktop {
+    display: none;
+  }
 }
 
 .header-btn-buy {
@@ -43,6 +86,10 @@
     border-radius: 22px;
     padding: 0;
     margin-left: 32px;
+  }
+  @include desktop {
+    width: 159px;
+    margin-left: 0;
   }
 }
 
@@ -58,6 +105,10 @@
   @include tablet {
     margin-top: var(--typical-gap);
     margin-bottom: var(--typical-gap);
+  }
+  @include desktop {
+    margin-top: 60px;
+    margin-bottom: 40px;
   }
 }
 
@@ -77,6 +128,13 @@
     height: 336px;
     top: 80px;
   }
+  @include desktop {
+    width: 236px;
+    height: 557px;
+    right: 408px;
+    left: unset;
+    top: 112px;
+  }
 }
 
 .banner-img-ellipse {
@@ -94,6 +152,13 @@
     height: 333px;
     top: 43px;
   }
+  @include desktop {
+    width: 534px;
+    height: 534px;
+    right: 229px;
+    left: unset;
+    top: 54px;
+  }
 }
 
 .banner-img-milk {
@@ -102,6 +167,10 @@
     display: block;
     width: 152px;
     height: 154px;
+  }
+  @include desktop {
+    width: 213px;
+    height: 216px;
   }
 }
 
@@ -114,6 +183,10 @@
     height: 150px;
     z-index: 5;
   }
+  @include desktop {
+    width: 304px;
+    height: 241px;
+  }
 }
 
 .hero-wrapper {
@@ -125,6 +198,11 @@
     width: 114px;
     height: 73px;
   }
+  @include desktop {
+    width: 200px;
+    height: 124px;
+    margin-top: 68px;
+  }
 }
 
 .hero-wrapper__text {
@@ -133,12 +211,28 @@
   line-height: 1.5;
   color: #ffffff;
   margin-bottom: 7px;
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.4;
+    margin-bottom: 20px;
+  }
 }
 
 .hero-cursor-btn {
   width: 18px;
   height: 18px;
   background-color: transparent;
+  @include desktop {
+    width: 26px;
+    height: 26px;
+  }
+}
+
+.hero-cursor-btn__img {
+  @include desktop {
+    width: 26px;
+    height: 26px;
+  }
 }
 
 .header-title {
@@ -156,6 +250,13 @@
     font-size: 22px;
     line-height: 1.13;
   }
+  @include desktop {
+    font-size: 38px;
+    line-height: 1.15;
+    min-width: 277px;
+    height: 137px;
+    margin-bottom: 24px;
+  }
 }
 
 .header-title__pink {
@@ -170,6 +271,10 @@
     font-size: 34px;
     line-height: 90.5%;
   }
+  @include desktop {
+    font-size: 58px;
+    line-height: 0.9;
+  }
 }
 
 .buttons-blok {
@@ -182,6 +287,10 @@
   background: #d41443;
   border-radius: 20px;
   margin-right: 8px;
+  @include desktop {
+    width: 107px;
+    height: 40px;
+  }
 }
 
 .buttons-blok__made {
@@ -189,6 +298,10 @@
   height: 24px;
   background: #ffffff;
   border-radius: 20px;
+  @include desktop {
+    width: 138px;
+    height: 40px;
+  }
 }
 
 .buttons-blok__link {
@@ -199,12 +312,18 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  //   color: #ffffff;
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.28;
+  }
 }
 
 .left-col-wrap {
   display: flex;
   align-items: center;
+  @include desktop {
+    align-items: normal;
+  }
 }
 
 .number-wrapper {
@@ -214,6 +333,10 @@
     justify-content: end;
     margin-top: 16px;
     margin-bottom: 65px;
+  }
+  @include desktop {
+    margin-top: 69px;
+    margin-bottom: 104px;
   }
 }
 
@@ -234,6 +357,10 @@
     height: 16px;
     border-radius: 50%;
     background: #ffffff;
+    @include desktop {
+      width: 30px;
+      height: 30px;
+    }
   }
 }
 
@@ -241,11 +368,20 @@
   width: 43px;
   height: 44px;
   margin-bottom: 16px;
+  @include desktop {
+    width: 72px;
+    height: 77px;
+    margin-bottom: 15px;
+  }
 }
 
 .number-wrapper__item-23 {
   width: 51px;
   height: 43px;
+  @include desktop {
+    width: 92px;
+    height: 76px;
+  }
 }
 
 .number-wrapper__numb {
@@ -259,18 +395,29 @@
   text-transform: uppercase;
   color: #d41443;
   position: absolute;
+  @include desktop {
+    font-size: 46px;
+    line-height: 1.15;
+  }
 }
 
 .number-wrapper__numb-16 {
   @extend .number-wrapper__numb;
   top: 2px;
   left: 0;
+  @include desktop {
+    top: 4px;
+  }
 }
 
 .number-wrapper__numb-23 {
   @extend .number-wrapper__numb;
   top: 1px;
   left: 7px;
+  @include desktop {
+    top: 3px;
+    left: 15px;
+  }
 }
 
 .number-wrapper__text {
@@ -281,12 +428,19 @@
   text-align: right;
   color: #ffffff;
   position: absolute;
+  @include desktop {
+    font-size: 14px;
+    line-height: 1.28;
+  }
 }
 
 .number-wrapper__text-16 {
   @extend .number-wrapper__text;
   bottom: 0;
   left: 13px;
+  @include desktop {
+    left: 19px;
+  }
 }
 
 .number-wrapper__text-23 {
