@@ -1,0 +1,95 @@
+.gallery {
+  background-image: linear-gradient(
+    to bottom,
+    #fff5f6 40%,
+    #fff 40%,
+    #fff 85%,
+    #fff 85%
+  );
+}
+
+.gallery-content {
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: 120px;
+  align-content: center;
+  @include tablet {
+    height: 264px;
+  }
+  @include desktop {
+    height: 430px;
+  }
+}
+
+.gallery-content__blok {
+  & + & {
+    margin-left: 2px;
+    margin-bottom: 2px;
+  }
+  @include tablet {
+    & + & {
+      margin-left: 3px;
+      margin-bottom: 3px;
+    }
+  }
+  @include desktop {
+    & + & {
+      margin-left: 5px;
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.gallery-content__blok {
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.gallery-content__blok:first-child,
+.gallery-content__blok:last-child {
+  height: 100%;
+  align-items: center;
+}
+
+.lower-blok {
+  @extend .gallery-content__blok;
+  top: 10px;
+}
+
+.gallery-content__img {
+  width: 39px;
+  height: 39px;
+  border-radius: 20%;
+  transition-property: transform;
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    width: 75px;
+    height: auto;
+  }
+  &:nth-child(2n) {
+    margin-top: 1px;
+  }
+  @include tablet {
+    width: 87px;
+    height: 87px;
+    &:hover,
+    &:focus {
+      width: 170px;
+      height: auto;
+    }
+    @include desktop {
+      width: 145px;
+      height: 145px;
+      &:hover,
+      &:focus {
+        width: 270px;
+        height: auto;
+      }
+    }
+  }
+}

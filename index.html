@@ -21,6 +21,20 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500;700&family=Titan+One&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
   </head>
   <body>
     <header class="header">
@@ -102,7 +116,8 @@
                       ./images/header/milk-desk.png    1x,
                       ./images/header/milk-desk-2x.png 2x
                     "
-                    media="(min-width: 1200px)"
+                    media="(min-width: 1200px)" />
+                  <source
                     srcset="
                       ./images/header/milk.png    1x,
                       ./images/header/milk-2x.png 2x
@@ -301,8 +316,8 @@
                 <picture class="products-img"
                   ><source
                     srcset="
-                      ./images/products/products-pic1.png    1x,
-                      ./images/products/products-pic1-2x.png 2x
+                      ./images/products/products-pic1-desk.png    1x,
+                      ./images/products/products-pic1-desk-2x.png 2x
                     "
                     media="(min-width: 1200px)"
                   />
@@ -315,8 +330,8 @@
                   />
                   <source
                     srcset="
-                      ./images/products/products-pic1-desk.png    1x,
-                      ./images/products/products-pic1-desk-2x.png 2x
+                      ./images/products/products-pic1.png    1x,
+                      ./images/products/products-pic1-2x.png 2x
                     "
                     media="(min-width: 320px)"
                   />
@@ -355,8 +370,8 @@
                 <picture class="products-img">
                   <source
                     srcset="
-                      ./images/products/products-pic2.png    1x,
-                      ./images/products/products-pic2-2x.png 2x
+                      ./images/products/products-pic2-desk.png    1x,
+                      ./images/products/products-pic2-desk-2x.png 2x
                     "
                     media="(min-width: 1200px)"
                   />
@@ -369,8 +384,8 @@
                   />
                   <source
                     srcset="
-                      ./images/products/products-pic2-desk.png    1x,
-                      ./images/products/products-pic2-desk-2x.png 2x
+                      ./images/products/products-pic2.png    1x,
+                      ./images/products/products-pic2-2x.png 2x
                     "
                     media="(min-width: 320px)"
                   />
@@ -406,8 +421,8 @@
                 <picture class="products-img">
                   <source
                     srcset="
-                      ./images/products/products-pic3.png    1x,
-                      ./images/products/products-pic3-2x.png 2x
+                      ./images/products/products-pic3-desk.png    1x,
+                      ./images/products/products-pic3-desk-2x.png 2x
                     "
                     media="(min-width: 1200px)"
                   />
@@ -420,8 +435,8 @@
                   />
                   <source
                     srcset="
-                      ./images/products/products-pic3-desk.png    1x,
-                      ./images/products/products-pic3-desk-2x.png 2x
+                      ./images/products/products-pic3.png    1x,
+                      ./images/products/products-pic3-2x.png 2x
                     "
                     media="(min-width: 320px)"
                   />
@@ -437,37 +452,61 @@
       </section>
       <!-- SECTION 2 -->
       <section class="about section">
-        <div class="container">
+        <div class="container background">
           <div class="about-content">
             <h3 class="about-content__pre-title">tradition and love</h3>
             <h2 class="about-content__title">how it’s made?</h2>
-            <div class="about-content__img">
-              <img
-                srcset="
-                  ./images/about/about-img.png    1x,
-                  ./images/about/about-img-2x.png 2x
-                "
-                src="./images/about/about-img.png"
-                alt="cow and milk"
-                width="280px"
-                height="279px"
-              />
+            <div class="about-content__wrapper">
+              <div class="about-content__img">
+                <picture
+                  ><source
+                    srcset="
+                      ./images/about/about-img-desk.png    1x,
+                      ./images/about/about-img-desk-2x.png 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/about/about-img-tab.png    1x,
+                      ./images/about/about-img-tab-2x.png 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      ./images/about/about-img.png    1x,
+                      ./images/about/about-img-2x.png 2x
+                    "
+                    media="(min-width: 320px)"
+                  />
+                  <img src="./images/about/about-img.png" alt="cow and milk" />
+                </picture>
+              </div>
+              <div class="about-content__texts">
+                <p class="about-content__top-text">
+                  Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam
+                  vel justo cursus, faucibus lorem eget, egestas eros. Maecenas
+                  eleifend erat at justo fringilla.
+                </p>
+                <p class="about-content__bottom-text">
+                  Curabitur lacinia enim at ex blandit, vel pellentesque odio
+                  elementum. Mauris rhoncus orci in imperdiet placerat.
+                  Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
+                  urna maximus. Cras massa nibh, tincidunt.<br />
+                  <br />
+                  Aliquam erat volutpat. Aenean accumsan.
+                </p>
+                <button type="button" class="about-content__btn button">
+                  <a href="" class="about-content__btn-link link">Read more</a>
+                  <svg class="menu-btn-icon" width="6px" height="8px">
+                    <use
+                      href="./images/icons.svg/symbols-def.svg#icon-arrow-btn"
+                    ></use>
+                  </svg>
+                </button>
+              </div>
             </div>
-            <p class="about-content__top-text">
-              Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel
-              justo cursus, faucibus lorem eget, egestas eros. Maecenas eleifend
-              erat at justo fringilla.
-            </p>
-            <p class="about-content__bottom-text">
-              Curabitur lacinia enim at ex blandit, vel pellentesque odio
-              elementum. Mauris rhoncus orci in imperdiet placerat. Vestibulum
-              euismod nisl suscipit ligula volutpat, a feugiat urna maximus.
-              Cras massa nibh, tincidunt. Aliquam erat volutpat. Aenean
-              accumsan.
-            </p>
-            <button type="button" class="about-content__btn button">
-              <a href="" class="about-content__btn-link link">Read more</a>
-            </button>
           </div>
         </div>
       </section>
@@ -478,6 +517,7 @@
             <ul class="advantages-content__list list">
               <li class="advantages-content__item">
                 <img
+                  class="advantages-img first-icon"
                   srcset="
                     ./images/advantages/icon1.png    1x,
                     ./images/advantages/icon1-2x.png 2x
@@ -494,6 +534,7 @@
               </li>
               <li class="advantages-content__item">
                 <img
+                  class="advantages-img second-icon"
                   srcset="
                     ./images/advantages/icon2.png    1x,
                     ./images/advantages/icon2-2x.png 2x
@@ -510,6 +551,7 @@
               </li>
               <li class="advantages-content__item">
                 <img
+                  class="advantages-img third-icon"
                   srcset="
                     ./images/advantages/icon3.png    1x,
                     ./images/advantages/icon3-2x.png 2x
@@ -532,72 +574,90 @@
       <section class="gallery section">
         <div class="container">
           <div class="gallery-content">
-            <div class="gallery-content__one-blok">
+            <div class="gallery-content__blok">
               <img
+                class="gallery-content__img"
                 src="./images/gallery/gallery1.jpg"
                 alt="icecream"
                 width="150px"
                 height="150px"
               />
             </div>
-            <div class="gallery-content__two-blok">
+            <div class="gallery-content__blok lower-blok">
               <img
+                class="gallery-content__img"
                 src="./images/gallery/gallery2.jpg"
                 alt="icecream"
                 width="150px"
                 height="150px"
               />
+            </div>
+            <div class="gallery-content__blok lower-blok">
               <img
+                class="gallery-content__img"
                 src="./images/gallery/gallery3.jpg"
                 alt="icecream"
                 width="150px"
                 height="150px"
               />
             </div>
-            <div class="gallery-content__three-blok">
+            <div class="gallery-content__blok">
               <img
+                class="gallery-content__img"
                 src="./images/gallery/gallery4.jpg"
                 alt="icecream"
                 width="150px"
                 height="150px"
               />
+            </div>
+            <div class="gallery-content__blok">
               <img
+                class="gallery-content__img"
                 src="./images/gallery/gallery5.jpg"
                 alt="icecream"
                 width="150px"
                 height="150px"
               />
             </div>
-            <div class="gallery-content__four-blok">
+            <div class="gallery-content__blok lower-blok">
               <img
+                class="gallery-content__img"
                 src="./images/gallery/gallery6.jpg"
                 alt="icecream"
                 width="150px"
                 height="150px"
               />
+            </div>
+            <div class="gallery-content__blok lower-blok">
               <img
+                class="gallery-content__img"
                 src="./images/gallery/gallery7.jpg"
                 alt="icecream"
                 width="150px"
                 height="150px"
               />
             </div>
-            <div class="gallery-content__five-blok">
+            <div class="gallery-content__blok">
               <img
+                class="gallery-content__img"
                 src="./images/gallery/gallery8.jpg"
                 alt="icecream"
                 width="150px"
                 height="150px"
               />
+            </div>
+            <div class="gallery-content__blok">
               <img
+                class="gallery-content__img"
                 src="./images/gallery/gallery9.jpg"
                 alt="icecream"
                 width="150px"
                 height="150px"
               />
             </div>
-            <div class="gallery-content__six-blok">
+            <div class="gallery-content__blok">
               <img
+                class="gallery-content__img"
                 src="./images/gallery/gallery10.jpg"
                 alt="icecream"
                 width="150px"
@@ -612,8 +672,9 @@
         <div class="container">
           <div class="customer-reviews">
             <ul class="customer-reviews__list list">
-              <li class="customer-reviews__item">
+              <li class="customer-reviews__item first-blok">
                 <img
+                  class="customer-reviews__img"
                   srcset="
                     ./images/reviews/photo1.png    1x,
                     ./images/reviews/photo1-2x.png 2x
@@ -629,13 +690,19 @@
                     risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
                     congue. Lorem ipsum primis in nibh vel risus.
                   </p>
+                  <svg class="hooks" width="54px" height="40px">
+                    <use
+                      href="./images/icons.svg/symbols-def.svg#icon-hooks"
+                    ></use>
+                  </svg>
                 </div>
                 <div class="customer-reviews__after-text">
                   <span class="customer-reviews__city">Emily, Los Angeles</span>
                 </div>
               </li>
-              <li class="customer-reviews__item">
+              <li class="customer-reviews__item second-blok">
                 <img
+                  class="customer-reviews__img"
                   srcset="
                     ./images/reviews/photo2.png    1x,
                     ./images/reviews/photo2-2x.png 2x
@@ -651,13 +718,19 @@
                     risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
                     congue. Lorem ipsum primis in nibh vel risus.
                   </p>
+                  <svg class="hooks" width="54px" height="40px">
+                    <use
+                      href="./images/icons.svg/symbols-def.svg#icon-hooks"
+                    ></use>
+                  </svg>
                 </div>
                 <div class="customer-reviews__after-text">
                   <span class="customer-reviews__city">July, Kharkiv</span>
                 </div>
               </li>
-              <li class="customer-reviews__item">
+              <li class="customer-reviews__item third-blok">
                 <img
+                  class="customer-reviews__img"
                   srcset="
                     ./images/reviews/photo3.png    1x,
                     ./images/reviews/photo3-2x.png 2x
@@ -673,6 +746,11 @@
                     risus. Aliquam sem. In hendrerit nulla quam nunc, accumsan
                     congue. Lorem ipsum primis in nibh vel risus.
                   </p>
+                  <svg class="hooks" width="54px" height="40px">
+                    <use
+                      href="./images/icons.svg/symbols-def.svg#icon-hooks"
+                    ></use>
+                  </svg>
                 </div>
                 <div class="customer-reviews__after-text">
                   <span class="customer-reviews__city">Katy, London</span>
@@ -689,7 +767,7 @@
             <ul class="contacts-content__list list">
               <li class="contacts-content__item">
                 <div class="contacts-content__first-part">
-                  <h3 class="contacts-content__spot">CAFE</h3>
+                  <h3 class="contacts-content__spot cafe-color">CAFE</h3>
                   <span class="contacts-content__city">Chicago</span>
                   <p class="contacts-content__text">
                     Fusce ut velit laoreet, tempus arcu molestie vulputate
@@ -697,7 +775,7 @@
                 </div>
                 <div class="contacts-content__second-part">
                   <span class="contacts-content__day">Monday - Friday</span>
-                  <span class="contacts-content__time"
+                  <span class="contacts-content__time time-margin"
                     >06:00 AM - 10:00 PM</span
                   >
                   <span class="contacts-content__day">Saturday - Sunday</span>
@@ -713,7 +791,7 @@
               </li>
               <li class="contacts-content__item">
                 <div class="contacts-content__first-part">
-                  <h3 class="contacts-content__spot">FOODTRUCK</h3>
+                  <h3 class="contacts-content__spot food-color">FOODTRUCK</h3>
                   <span class="contacts-content__city">Los Angeles</span>
                   <p class="contacts-content__text">
                     Fusce ut velit laoreet, tempus arcu molestie vulputate
@@ -721,7 +799,7 @@
                 </div>
                 <div class="contacts-content__second-part">
                   <span class="contacts-content__day">Monday - Friday</span>
-                  <span class="contacts-content__time"
+                  <span class="contacts-content__time time-margin"
                     >06:00 AM - 10:00 PM</span
                   >
                   <span class="contacts-content__day">Saturday - Sunday</span>
@@ -737,7 +815,7 @@
               </li>
               <li class="contacts-content__item">
                 <div class="contacts-content__first-part">
-                  <h3 class="contacts-content__spot">CAFE</h3>
+                  <h3 class="contacts-content__spot cafe-color">CAFE</h3>
                   <span class="contacts-content__city">New York</span>
                   <p class="contacts-content__text">
                     Fusce ut velit laoreet, tempus arcu molestie vulputate
@@ -745,7 +823,7 @@
                 </div>
                 <div class="contacts-content__second-part">
                   <span class="contacts-content__day">Monday - Friday</span>
-                  <span class="contacts-content__time"
+                  <span class="contacts-content__time time-margin"
                     >06:00 AM - 10:00 PM</span
                   >
                   <span class="contacts-content__day">Saturday - Sunday</span>
@@ -760,12 +838,30 @@
                 </div>
               </li>
             </ul>
-            <button type="button" class="contacts-btn button">
-              <a href="" class="contacts-btn__link link">Our Locations</a>
-            </button>
-            <button type="button" class="contacts-btn button">
-              <a href="" class="contacts-btn__link link">Franchise</a>
-            </button>
+            <div class="contacts-btn-wrapper">
+              <button type="button" class="contacts-btn pink-btn button">
+                <a href="" class="contacts-btn__link pink-btn-link link"
+                  >Our Locations</a
+                ><svg
+                  class="menu-btn-icon pink-btn-icon"
+                  width="6px"
+                  height="8px"
+                >
+                  <use
+                    href="./images/icons.svg/symbols-def.svg#icon-arrow-btn-white"
+                  ></use>
+                </svg>
+              </button>
+              <button type="button" class="contacts-btn white-btn button">
+                <a href="" class="contacts-btn__link white-btn-link link"
+                  >Franchise</a
+                ><svg class="menu-btn-icon" width="6px" height="8px">
+                  <use
+                    href="./images/icons.svg/symbols-def.svg#icon-arrow-btn"
+                  ></use>
+                </svg>
+              </button>
+            </div>
           </div>
         </div>
       </section>
@@ -815,5 +911,14 @@
       </div>
     </footer>
     <script src="./js/menu.js"></script>
+    <script>
+      $(".customer-reviews__list").slick({
+        infinite: false,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        dots: true,
+        arrows: false,
+      });
+    </script>
   </body>
 </html>

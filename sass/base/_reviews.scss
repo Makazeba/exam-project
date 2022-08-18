@@ -1,0 +1,176 @@
+.customer-reviews {
+  padding-top: 80px;
+  padding-bottom: 48px;
+  @include tablet {
+    padding-bottom: 80px;
+  }
+  @include desktop {
+    padding-bottom: 120px;
+  }
+}
+
+// .second-blok,
+// .third-blok {
+//   display: none;
+// }
+
+.customer-reviews__list {
+  text-align: center;
+}
+
+.customer-reviews__img {
+  width: 85px;
+  height: auto;
+  margin: 0 auto;
+  margin-bottom: 32px;
+  @include tablet {
+    margin-bottom: 20px;
+  }
+  @include desktop {
+    margin-bottom: 16px;
+  }
+}
+
+.customer-reviews__text {
+  padding: 43px 43px 26px 50px;
+  background: #fafafa;
+  position: relative;
+  z-index: 5;
+  @include tablet {
+    margin: 0 42px;
+    padding: 37px 6px 44px 6px;
+  }
+  @include desktop {
+    max-width: 1034px;
+    padding: 47px 105px 35px 105px;
+    margin: 0 auto;
+  }
+}
+
+.customer-reviews__main-text {
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 2.5;
+  text-align: center;
+  color: #000000;
+  padding: 0 15px;
+  position: relative;
+  z-index: 5;
+  background-image: repeating-linear-gradient(
+    rgba(0, 0, 0, 0) 0,
+    rgba(0, 0, 0, 0) 27px,
+    #e1e1e1 27px,
+    #e1e1e1 28px,
+    rgba(0, 0, 0, 0) 28px,
+    rgba(0, 0, 0, 0) 30px
+  );
+  @include tablet {
+    font-size: 14px;
+    line-height: 2.16;
+    padding: 0 44px;
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.9;
+    padding: 0 37px;
+  }
+}
+
+.hooks {
+  position: absolute;
+  top: 30px;
+  left: 53px;
+  @include tablet {
+    top: 20px;
+    left: 9px;
+    width: 61px;
+    height: 40px;
+  }
+  @include desktop {
+    top: 32px;
+    left: 113px;
+    width: 54px;
+    height: 40px;
+  }
+}
+
+.customer-reviews__after-text {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.86;
+  text-align: center;
+  color: #000000;
+  margin-top: 36px;
+  position: relative;
+  &::after {
+    content: "";
+    background-image: url(../images/icons.svg/dots-2.svg);
+    background-repeat: no-repeat;
+    width: 32px;
+    height: 4px;
+    position: absolute;
+    top: -16px;
+    left: calc(100% / 2 - 16px);
+  }
+  @include tablet {
+    font-size: 16px;
+    line-height: 1.86;
+    margin-top: 24px;
+  }
+  @include desktop {
+    font-size: 20px;
+    margin-top: 36px;
+  }
+}
+
+.customer-btn-list {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.customer-btn-item {
+  display: inline-flex;
+  & + & {
+    margin-left: 18px;
+  }
+}
+
+.customer-btn {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin-top: 16px;
+  @include tablet {
+    margin-top: 32px;
+  }
+}
+
+.slick-dots li {
+  display: inline-flex;
+  & + li {
+    margin-left: 18px;
+  }
+}
+
+.slick-dots li button {
+  font-size: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: #d9d9d9;
+}
+
+.slick-dots .slick-active button {
+  background-image: url(../images/icons.svg/home.svg);
+  background-color: transparent;
+  width: 12.5px;
+  height: 12px;
+  border-radius: 0;
+}
