@@ -13,10 +13,24 @@
       #fff5f6 100%
     );
   }
+  @include desktop {
+    background-image: linear-gradient(
+      to bottom,
+      #fff 14%,
+      #fff5f6 14%,
+      #fff5f6 100%
+    );
+  }
 }
 
 .contacts-content {
   padding-bottom: 48px;
+  @include tablet {
+    padding-bottom: 40px;
+  }
+  @include desktop {
+    padding-bottom: 120px;
+  }
 }
 
 .contacts-content__list {
@@ -45,6 +59,10 @@
     }
     margin-bottom: 0;
   }
+  @include desktop {
+    padding: 40px 40px;
+    max-width: 395px;
+  }
 }
 
 .contacts-content__first-part {
@@ -69,6 +87,9 @@
   @include tablet {
     font-size: 16px;
     line-height: 1.8;
+  }
+  @include desktop {
+    margin-bottom: 32px;
   }
 }
 
@@ -107,6 +128,10 @@
     line-height: 1.86;
     margin-bottom: 13px;
   }
+  @include desktop {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
 }
 
 .contacts-content__text {
@@ -117,6 +142,10 @@
   @include tablet {
     font-size: 14px;
     line-height: 1.66;
+  }
+  @include desktop {
+    font-size: 16px;
+    line-height: 1.83;
   }
 }
 
@@ -140,6 +169,9 @@
   @include tablet {
     font-size: 14px;
   }
+  @include desktop {
+    font-size: 16px;
+  }
 }
 
 .contacts-content__time {
@@ -149,6 +181,9 @@
   color: #ffa5ba;
   @include tablet {
     font-size: 14px;
+  }
+  @include desktop {
+    font-size: 16px;
   }
 }
 
@@ -172,6 +207,13 @@
     font-size: 14px;
     line-height: 1.83;
   }
+  @include desktop {
+    font-size: 16px;
+  }
+}
+
+.contacts-content__mail {
+  @extend .contacts-content__tel;
 }
 
 .contacts-btn-wrapper {
@@ -184,15 +226,20 @@
     justify-content: center;
     margin-top: 40px;
   }
+  @include desktop {
+    margin-top: 60px;
+  }
 }
 
 .contacts-btn {
   width: 161.45px;
   height: 44px;
-
   border-radius: 22px;
   @include tablet {
     width: 191px;
+  }
+  @include desktop {
+    width: 198px;
   }
 }
 

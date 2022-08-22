@@ -1520,9 +1520,24 @@ img {
     background-image: linear-gradient(to bottom, #fff 16%, #fff5f6 16%, #fff5f6 100%);
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts {
+    background-image: linear-gradient(to bottom, #fff 14%, #fff5f6 14%, #fff5f6 100%);
+  }
+}
 
 .contacts-content {
   padding-bottom: 48px;
+}
+@media screen and (min-width: 768px) {
+  .contacts-content {
+    padding-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-content {
+    padding-bottom: 120px;
+  }
 }
 
 .contacts-content__list {
@@ -1556,6 +1571,12 @@ img {
     margin-left: 30px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts-content__item {
+    padding: 40px 40px;
+    max-width: 395px;
+  }
+}
 
 .contacts-content__first-part {
   margin-bottom: 24px;
@@ -1583,6 +1604,11 @@ img {
   .contacts-content__spot, .food-color, .cafe-color {
     font-size: 16px;
     line-height: 1.8;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-content__spot, .food-color, .cafe-color {
+    margin-bottom: 32px;
   }
 }
 
@@ -1626,6 +1652,12 @@ img {
     margin-bottom: 13px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts-content__city {
+    font-size: 16px;
+    margin-bottom: 8px;
+  }
+}
 
 .contacts-content__text {
   font-weight: 500;
@@ -1637,6 +1669,12 @@ img {
   .contacts-content__text {
     font-size: 14px;
     line-height: 1.66;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-content__text {
+    font-size: 16px;
+    line-height: 1.83;
   }
 }
 
@@ -1665,6 +1703,11 @@ img {
     font-size: 14px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts-content__day {
+    font-size: 16px;
+  }
+}
 
 .contacts-content__time {
   font-weight: 500;
@@ -1675,6 +1718,11 @@ img {
 @media screen and (min-width: 768px) {
   .contacts-content__time {
     font-size: 14px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-content__time {
+    font-size: 16px;
   }
 }
 
@@ -1691,16 +1739,21 @@ img {
   max-width: 179px;
 }
 
-.contacts-content__tel {
+.contacts-content__tel, .contacts-content__mail {
   font-weight: 500;
   font-size: 12px;
   line-height: 1.5;
   color: #907e82;
 }
 @media screen and (min-width: 768px) {
-  .contacts-content__tel {
+  .contacts-content__tel, .contacts-content__mail {
     font-size: 14px;
     line-height: 1.83;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-content__tel, .contacts-content__mail {
+    font-size: 16px;
   }
 }
 
@@ -1717,6 +1770,11 @@ img {
     margin-top: 40px;
   }
 }
+@media screen and (min-width: 1200px) {
+  .contacts-btn-wrapper {
+    margin-top: 60px;
+  }
+}
 
 .contacts-btn, .white-btn, .pink-btn {
   width: 161.45px;
@@ -1726,6 +1784,11 @@ img {
 @media screen and (min-width: 768px) {
   .contacts-btn, .white-btn, .pink-btn {
     width: 191px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts-btn, .white-btn, .pink-btn {
+    width: 198px;
   }
 }
 
@@ -1757,6 +1820,162 @@ img {
 
 .white-btn-link {
   color: #d41342;
+}
+
+.footer {
+  background: #e5e5e5;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    background: #fff5f6;
+    padding-bottom: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-content {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-content {
+    margin-bottom: 60px;
+  }
+}
+
+.title-wrapper {
+  padding-right: 46px;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 768px) {
+  .title-wrapper {
+    padding-right: 0;
+    width: 50%;
+    margin-bottom: 0;
+  }
+}
+
+.footer-content__pre-title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.16;
+  text-transform: uppercase;
+  color: #ffa5ba;
+  margin-bottom: 16px;
+}
+@media screen and (min-width: 768px) {
+  .footer-content__pre-title {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 12px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-content__pre-title {
+    font-size: 30px;
+    line-height: 1.13;
+  }
+}
+
+.footer-content__title {
+  font-family: "Titan One";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 34px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #d41443;
+}
+@media screen and (min-width: 768px) {
+  .footer-content__title {
+    font-size: 48px;
+    line-height: 1.14;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-content__title {
+    font-size: 58px;
+  }
+}
+
+.content-soc__list {
+  display: flex;
+  justify-content: end;
+}
+.content-soc__item + .content-soc__item {
+  margin-left: 28px;
+}
+@media screen and (min-width: 768px) {
+  .content-soc__item + .content-soc__item {
+    margin-left: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content-soc__item + .content-soc__item {
+    margin-left: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .content-soc__icon {
+    width: 34px;
+    height: 34px;
+  }
+}
+
+.footer-content__cont {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: right;
+  margin-top: 40px;
+  margin-bottom: 56px;
+}
+@media screen and (min-width: 768px) {
+  .footer-content__cont {
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-content__cont {
+    font-size: 16px;
+  }
+}
+
+.footer-content__text {
+  color: #000000;
+}
+
+.footer-content__tel {
+  color: #d41443;
+}
+
+.copyright {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  text-align: center;
+  color: #907e82;
+}
+@media screen and (min-width: 768px) {
+  .copyright {
+    line-height: 1.86;
+    border-top: 1px solid #e1e1e1;
+    padding-top: 8px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hidden-br {
+    display: none;
+  }
 }
 
 .backdrop {
