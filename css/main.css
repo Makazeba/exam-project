@@ -1228,6 +1228,20 @@ img {
   }
 }
 
+.visually__hidden {
+  width: 1px;
+  height: 1px;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  border: 0;
+  margin: -1px;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+
 .gallery {
   background-image: linear-gradient(to bottom, #fff5f6 40%, #fff 40%, #fff 85%, #fff 85%);
 }
