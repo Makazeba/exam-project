@@ -110,7 +110,7 @@
     <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
-    <header class="header">
+    <header id="home" class="header">
       <div class="container">
         <div class="header-nav">
           <div class="logo">
@@ -127,7 +127,7 @@
           <div class="desk-menu-content">
             <ul class="desk-menu-content__list list">
               <li class="desk-menu-content__item">
-                <a href="" class="desk-menu-content__link link">Home</a>
+                <a href="#home" class="desk-menu-content__link link">Home</a>
               </li>
               <li class="desk-menu-content__item">
                 <a href="#about" class="desk-menu-content__link link"
@@ -343,7 +343,7 @@
           <div class="menu-content">
             <ul class="menu-content__list list">
               <li class="menu-content__item">
-                <a href="" class="menu-content__link link">Home</a>
+                <a href="#home" class="menu-content__link link">Home</a>
               </li>
               <li class="menu-content__item">
                 <a href="#about" class="menu-content__link link">About us</a>
@@ -1021,6 +1021,78 @@
         All Rights Reserved.
       </div>
     </footer>
+    <div class="backdrop" data-modal>
+      <div class="modal">
+        <div class="modal__button">
+          <button type="button" class="modal__button-close" data-modal-close>
+            <svg class="button-close__icon close" width="14px" height="14px">
+              <use href="./images/icons.svg/symbols-def.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <h3 class="modal__title">Leave your details, we will call you back</h3>
+        <form class="modal-form">
+          <label class="modal-form__label">Name</label>
+          <div class="modal-form__input-wrap">
+            <input type="text" name="name" class="modal-form__input" /><svg
+              class="modal-form__input-icon"
+              width="18px"
+              height="18px"
+            >
+              <use
+                href="./images/icons.svg/symbol-defs.svg#icon-person-black-18dp-1"
+              ></use>
+            </svg>
+          </div>
+          <label class="modal-form__label">Phone number</label>
+          <div class="modal-form__input-wrap">
+            <input type="text" name="tel" class="modal-form__input" /><svg
+              class="modal-form__input-icon"
+              width="18px"
+              height="18px"
+            >
+              <use
+                href="./images/icons.svg/symbol-defs.svg#icon-phone-black-18dp-1"
+              ></use>
+            </svg>
+          </div>
+          <label class="modal-form__label">Email</label>
+          <div class="modal-form__input-wrap">
+            <input type="text" name="email" class="modal-form__input" /><svg
+              class="modal-form__input-icon"
+              width="18px"
+              height="18px"
+            >
+              <use
+                href="./images/icons.svg/symbol-defs.svg#icon-email-black-18dp-1"
+              ></use>
+            </svg>
+          </div>
+          <label class="modal-form__label">Комментарий</label>
+          <textarea
+            name="coment"
+            class="modal-form__textarea"
+            placeholder="Введите текст"
+          ></textarea>
+          <div class="modal-form__checkbox">
+            <input
+              type="checkbox"
+              id="checkbox"
+              class="modal-form__checkbox-icon vis-hidden"
+            />
+            <label for="checkbox" class="modal-form__checkbox-label"
+              >Соглашаюсь с рассылкой и принимаю
+              <a href="" class="modal-form__checkbox-link">
+                Условия договора</a
+              ></label
+            >
+            <button type="submit" class="modal-form__checkbox-btn button">
+              Отправить
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
     <script src="./js/menu.js"></script>
     <script>
       $(".customer-reviews__list").slick({

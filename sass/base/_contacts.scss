@@ -256,6 +256,10 @@
 .white-btn {
   @extend .contacts-btn;
   background: #ffffff;
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+  }
 }
 
 .contacts-btn__link {

@@ -49,21 +49,7 @@
   @include tablet {
     padding-top: 20px;
   }
-  // @include desktop {
-  //   background-color: #fff5f6;
-  //   background-image: url("../../images/about/milk-desk.png");
-  //   background-position: bottom 170px left 0;
-  //   background-repeat: no-repeat;
-  //   background-size: contain;
-  //   @media (min-device-pixel-ratio: 2),
-  //     (min-resolution: 192dpi),
-  //     (min-resolution: 2dppx) {
-  //     background-color: #fff5f6;
-  //     background-image: url("../../images/about/milk-desk-2x.png");
-  //   }
-  // }
 }
-
 .about-content__pre-title {
   font-family: "Titan One";
   font-style: normal;
@@ -189,6 +175,13 @@
   height: 44px;
   background: #ffffff;
   border-radius: 22px;
+  &:hover,
+  &:focus {
+    background: #ecebeb;
+    transition-property: background;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
 }
 
 .about-content__btn-link {
