@@ -18,26 +18,30 @@
   visibility: hidden;
 }
 
-.modal {
+.overflow-lock {
+  overflow: hidden !important;
+}
+
+.modal-about {
   position: relative;
   top: 15%;
   left: 50%;
   transform: rotate(360deg) translate(-50%, 0) scale(1);
   width: 450px;
-  min-height: 609px;
+  height: auto;
   background-color: #fff5f6;
-  border-radius: 7px;
+  border-radius: 20px;
   transition: transform 400ms;
   padding-top: 44px;
   padding-right: 40px;
   padding-left: 40px;
+  padding-bottom: 30px;
+  overflow: visible;
   @media screen and (max-width: 479px) {
     width: 290px;
-    min-height: 580px;
   }
   @include desktop {
     width: 528px;
-    min-height: 581px;
   }
 }
 

@@ -158,7 +158,12 @@
               </svg>
             </button>
             <button type="button" class="header-btn-buy button">
-              <a href="" class="menu-btn-buy__link link">Buy now</a>
+              <a
+                href="javascript:void(0);"
+                class="menu-btn-buy__link link"
+                data-modal-open
+                >Buy now</a
+              >
               <svg class="menu-btn-icon" width="6px" height="8px">
                 <use
                   href="./images/icons.svg/symbols-def.svg#icon-arrow-btn"
@@ -331,8 +336,10 @@
             </svg>
           </button>
           <div class="menu-btn-wrapper">
-            <button type="button" class="menu-btn-buy button">
-              <a href="" class="menu-btn-buy__link link">Buy now</a>
+            <button type="button" class="menu-btn-buy button" data-modal-open>
+              <a href="javascript:void(0);" class="menu-btn-buy__link link"
+                >Buy now</a
+              >
               <svg class="menu-btn-icon" width="6px" height="8px">
                 <use
                   href="./images/icons.svg/symbols-def.svg#icon-arrow-btn"
@@ -584,8 +591,12 @@
                   <br />
                   Aliquam erat volutpat. Aenean accumsan.
                 </p>
-                <button type="button" class="about-content__btn button">
-                  <a href="" class="about-content__btn-link link">Read more</a>
+                <button
+                  type="button"
+                  class="about-content__btn button"
+                  data-modal2-open
+                >
+                  <span class="about-content__btn-link link">Read more</span>
                   <svg class="menu-btn-icon" width="6px" height="8px">
                     <use
                       href="./images/icons.svg/symbols-def.svg#icon-arrow-btn"
@@ -1021,7 +1032,7 @@
         All Rights Reserved.
       </div>
     </footer>
-    <div class="backdrop" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <div class="modal__button">
           <button type="button" class="modal__button-close" data-modal-close>
@@ -1036,11 +1047,11 @@
           <div class="modal-form__input-wrap">
             <input type="text" name="name" class="modal-form__input" /><svg
               class="modal-form__input-icon"
-              width="18px"
-              height="18px"
+              width="13px"
+              height="13px"
             >
               <use
-                href="./images/icons.svg/symbol-defs.svg#icon-person-black-18dp-1"
+                href="./images/icons.svg/symbols-def.svg#icon-Vector-name"
               ></use>
             </svg>
           </div>
@@ -1048,11 +1059,11 @@
           <div class="modal-form__input-wrap">
             <input type="text" name="tel" class="modal-form__input" /><svg
               class="modal-form__input-icon"
-              width="18px"
-              height="18px"
+              width="13px"
+              height="13px"
             >
               <use
-                href="./images/icons.svg/symbol-defs.svg#icon-phone-black-18dp-1"
+                href="./images/icons.svg/symbols-def.svg#icon-Vector-tel"
               ></use>
             </svg>
           </div>
@@ -1060,15 +1071,15 @@
           <div class="modal-form__input-wrap">
             <input type="text" name="email" class="modal-form__input" /><svg
               class="modal-form__input-icon"
-              width="18px"
-              height="18px"
+              width="13px"
+              height="13px"
             >
               <use
-                href="./images/icons.svg/symbol-defs.svg#icon-email-black-18dp-1"
+                href="./images/icons.svg/symbols-def.svg#icon-Vector-mail"
               ></use>
             </svg>
           </div>
-          <label class="modal-form__label">Комментарий</label>
+          <label class="modal-form__label">Comments</label>
           <textarea
             name="coment"
             class="modal-form__textarea"
@@ -1081,19 +1092,48 @@
               class="modal-form__checkbox-icon vis-hidden"
             />
             <label for="checkbox" class="modal-form__checkbox-label"
-              >Соглашаюсь с рассылкой и принимаю
+              >I agree with the mailing and accept
               <a href="" class="modal-form__checkbox-link">
-                Условия договора</a
+                Terms of the contract</a
               ></label
             >
             <button type="submit" class="modal-form__checkbox-btn button">
-              Отправить
+              Send
             </button>
           </div>
         </form>
       </div>
     </div>
+    <div class="backdrop is-hidden" data-modal2>
+      <div class="modal-about">
+        <div class="modal__button">
+          <button type="button" class="modal__button-close" data-modal2-close>
+            <svg class="button-close__icon close" width="14px" height="14px">
+              <use href="./images/icons.svg/symbols-def.svg#icon-close"></use>
+            </svg>
+          </button>
+        </div>
+        <h3 class="modal__title">Our product</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae
+          quibusdam ab ducimus dolorem voluptate, consectetur modi recusandae,
+          inventore dolore eaque rem dolores? Repellendus iste voluptate fugiat
+          quisquam pariatur asperiores iusto. Tempore amet perferendis expedita
+          quibusdam velit natus beatae dolor commodi quae excepturi eaque,
+          tenetur fugit, consequuntur soluta voluptate. Sunt illo autem cum
+          laborum ad optio rerum, nulla ea exercitationem animi? Quos sed
+          cupiditate soluta sapiente fugit ipsam molestiae fuga accusamus vitae
+          exercitationem laudantium, adipisci quae impedit assumenda quisquam
+          porro voluptatem hic rem quis, et fugiat! Quisquam dolore beatae
+          incidunt accusamus. Ad ab at officiis itaque illum dicta! Au
+          praesentium quis ipsa, asperiores minima atque sed magni ea provident!
+          Cumque fugiat aliquid non facilis nam tempore ea alias magnam
+          excepturi iste?
+        </p>
+      </div>
+    </div>
     <script src="./js/menu.js"></script>
+    <script src="./js/modal.js"></script>
     <script>
       $(".customer-reviews__list").slick({
         infinite: false,
