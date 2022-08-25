@@ -419,40 +419,40 @@ img {
   display: flex;
 }
 
-.buttons-blok__products {
+.button-products {
   width: 62.4px;
   height: 24px;
   background: #d41443;
   border-radius: 20px;
   margin-right: 8px;
 }
-.buttons-blok__products:hover, .buttons-blok__products:focus {
+.button-products:hover, .button-products:focus {
   background: #c7133e;
   transition-property: background;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1200px) {
-  .buttons-blok__products {
+  .button-products {
     width: 107px;
     height: 40px;
   }
 }
 
-.buttons-blok__made {
+.button-made {
   width: 82.8px;
   height: 24px;
   background: #ffffff;
   border-radius: 20px;
 }
-.buttons-blok__made:hover, .buttons-blok__made:focus {
+.button-made:hover, .button-made:focus {
   background: #ecebeb;
   transition-property: background;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 1200px) {
-  .buttons-blok__made {
+  .button-made {
     width: 138px;
     height: 40px;
   }
